@@ -1,86 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Cosmetic Product Development</title>
+<meta charset="UTF-8">
+<title>Cosmetic Product Development Studio</title>
 
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:0;
-background:#fafafa;
+background:#f7f7f7;
 color:#333;
 }
 
 header{
-background:#111;
+background-image:url("https://images.unsplash.com/photo-1581093458791-9d15482442f2");
+background-size:cover;
+background-position:center;
 color:white;
-padding:40px;
+padding:120px 20px;
 text-align:center;
 }
 
-section{
-padding:50px;
-max-width:900px;
-margin:auto;
+header h1{
+font-size:48px;
+margin-bottom:10px;
 }
 
-h1,h2{
-color:#222;
+header p{
+font-size:20px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
 }
 
 .services{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
 background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-top:0;
+}
+
+.process{
+background:white;
+border-radius:10px;
+padding:40px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.contact{
+text-align:center;
+background:#111;
+color:white;
+padding:60px 20px;
 }
 
 footer{
-background:#111;
-color:white;
 text-align:center;
 padding:20px;
-}
-
-button{
-background:black;
+background:#222;
 color:white;
-padding:12px 20px;
-border:none;
-border-radius:5px;
-cursor:pointer;
 }
 
 </style>
+
 </head>
 
 
 <body>
 
+
 <header>
+
 <h1>Cosmetic Product Development Studio</h1>
-<p>Connecting beauty brands with trusted manufacturers and packaging suppliers</p>
+
+<p>Helping beauty brands connect with trusted manufacturers and packaging suppliers</p>
+
 </header>
 
 
-<section>
+<section class="about">
+
+<div>
 
 <h2>About</h2>
 
 <p>
-We help emerging beauty brands bring cosmetic products to market by connecting them with reliable third-party manufacturers and packaging vendors.
+We support emerging beauty brands in bringing cosmetic products to market by connecting them with reliable third-party manufacturers and packaging vendors.
 </p>
 
 <p>
-Our work focuses on coordinating product development, evaluating available formulations, and sourcing suitable packaging solutions to support efficient manufacturing.
+Our experience working with cosmetic supply chains helps simplify the process of selecting formulations, evaluating samples, and coordinating packaging solutions.
 </p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
 
 </section>
 
@@ -88,28 +129,30 @@ Our work focuses on coordinating product development, evaluating available formu
 
 <section>
 
-<h2>Services</h2>
+<h2 style="text-align:center;">Services</h2>
+
+<br>
 
 <div class="services">
 
 <div class="card">
 <h3>Manufacturer Sourcing</h3>
-<p>Identify suitable third-party cosmetic manufacturers based on product type and production requirements.</p>
+<p>Identify suitable third-party cosmetic manufacturers based on product category and production requirements.</p>
 </div>
 
 <div class="card">
 <h3>Product Development Coordination</h3>
-<p>Support brands in selecting formulations, reviewing samples, and preparing products for manufacturing.</p>
+<p>Support product selection, sample review, and development planning before production.</p>
 </div>
 
 <div class="card">
 <h3>Packaging Vendor Sourcing</h3>
-<p>Connect brands with suppliers for bottles, pumps, tubes, and cartons.</p>
+<p>Connect brands with packaging suppliers for bottles, pumps, tubes, and cartons.</p>
 </div>
 
 <div class="card">
 <h3>Manufacturing Guidance</h3>
-<p>Assist with navigating early manufacturing stages and vendor communication.</p>
+<p>Assist brands in navigating early manufacturing stages and supplier communication.</p>
 </div>
 
 </div>
@@ -120,32 +163,46 @@ Our work focuses on coordinating product development, evaluating available formu
 
 <section>
 
-<h2>How It Works</h2>
+<h2 style="text-align:center;">How It Works</h2>
 
-<p>1. Share your product idea</p>
-<p>2. We identify suitable manufacturers</p>
-<p>3. Review formulation and packaging options</p>
-<p>4. Coordinate production preparation</p>
+<br>
+
+<div class="process">
+
+<p><strong>Step 1:</strong> Share your product idea or category.</p>
+
+<p><strong>Step 2:</strong> We identify suitable third-party manufacturers.</p>
+
+<p><strong>Step 3:</strong> Review formulation and packaging options.</p>
+
+<p><strong>Step 4:</strong> Coordinate manufacturing preparation.</p>
+
+</div>
 
 </section>
 
 
 
-<section>
+<section class="contact">
 
 <h2>Contact</h2>
 
-<p>Email: your@email.com</p>
+<p>If you are planning to launch a cosmetic product and need guidance on manufacturing or packaging sourcing, feel free to reach out.</p>
 
-<p>If you are planning to launch a cosmetic product and need guidance on manufacturing or packaging, feel free to reach out.</p>
+<p><strong>Phone:</strong> 7208477566</p>
+
+<p><strong>Email:</strong> sukritisingh2212@gmail.com</p>
 
 </section>
 
 
+
 <footer>
+
 <p>Cosmetic Product Development Studio</p>
+
 </footer>
 
-</body>
 
+</body>
 </html>
