@@ -14,13 +14,45 @@ background:#f7f7f7;
 color:#333;
 }
 
+/* SIDE MENU */
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:200px;
+height:100%;
+background:#111;
+padding-top:30px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:15px;
+text-decoration:none;
+font-size:16px;
+}
+
+.sidebar a:hover{
+background:#444;
+}
+
+/* MAIN CONTENT */
+
+.main{
+margin-left:200px;
+}
+
+/* HEADER */
+
 header{
 background-image:url("https://images.unsplash.com/photo-1571781926291-c477ebfd024b");
 background-size:cover;
 background-position:center;
-color:white;
 padding:120px 20px;
 text-align:center;
+color:black;
 }
 
 header h1{
@@ -32,34 +64,12 @@ header p{
 font-size:20px;
 }
 
+/* SECTIONS */
+
 section{
-max-width:1100px;
+max-width:1000px;
 margin:auto;
-padding:60px 20px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-}
-
-.card h3{
-margin-top:0;
-}
-
-.process{
-background:white;
-border-radius:10px;
-padding:40px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+padding:70px 20px;
 }
 
 .about{
@@ -73,6 +83,52 @@ align-items:center;
 width:100%;
 border-radius:10px;
 }
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.product-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.product-card img{
+width:100%;
+border-radius:10px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* FOUNDER */
+
+.founder{
+display:grid;
+grid-template-columns:300px 1fr;
+gap:40px;
+align-items:center;
+}
+
+.founder img{
+width:100%;
+border-radius:10px;
+}
+
+/* CONTACT */
 
 .contact{
 text-align:center;
@@ -95,6 +151,20 @@ color:white;
 
 <body>
 
+<!-- SIDE MENU -->
+
+<div class="sidebar">
+
+<a href="#about">About Us</a>
+<a href="#products">Products</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#founder">Founder</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<div class="main">
 
 <header>
 
@@ -105,18 +175,19 @@ color:white;
 </header>
 
 
-<section class="about">
+
+<section id="about" class="about">
 
 <div>
 
-<h2>About</h2>
+<h2>About Us</h2>
 
 <p>
-We support emerging beauty brands in bringing cosmetic products to market by connecting them with reliable third-party manufacturers and packaging vendors.
+We help emerging beauty brands bring cosmetic products to market by connecting them with reliable third-party manufacturers and packaging vendors.
 </p>
 
 <p>
-Our experience working with cosmetic supply chains helps simplify the process of selecting formulations, evaluating samples, and coordinating packaging solutions.
+Our experience with cosmetic supply chains allows us to support founders in selecting formulations, reviewing samples, and sourcing packaging.
 </p>
 
 </div>
@@ -127,55 +198,43 @@ Our experience working with cosmetic supply chains helps simplify the process of
 
 
 
-<section>
+<section id="products">
 
-<h2 style="text-align:center;">Services</h2>
+<h2>Products</h2>
 
-<br>
+<div class="products">
 
-<div class="services">
+<div class="product-card">
 
-<div class="card">
-<h3>Manufacturer Sourcing</h3>
-<p>Identify suitable third-party cosmetic manufacturers based on product category and production requirements.</p>
-</div>
+<img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571">
 
-<div class="card">
-<h3>Product Development Coordination</h3>
-<p>Support product selection, sample review, and development planning before production.</p>
-</div>
+<h3>Skincare Products</h3>
 
-<div class="card">
-<h3>Packaging Vendor Sourcing</h3>
-<p>Connect brands with packaging suppliers for bottles, pumps, tubes, and cartons.</p>
-</div>
-
-<div class="card">
-<h3>Manufacturing Guidance</h3>
-<p>Assist brands in navigating early manufacturing stages and supplier communication.</p>
-</div>
+<p>Support for creams, serums, lotions and skincare manufacturing.</p>
 
 </div>
 
-</section>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1601049676869-702ea24cfd58">
+
+<h3>Haircare Products</h3>
+
+<p>Guidance for oils, shampoos and conditioners.</p>
+
+</div>
 
 
+<div class="product-card">
 
-<section>
+<img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273">
 
-<h2 style="text-align:center;">How It Works</h2>
+<h3>Cosmetic Packaging</h3>
 
-<br>
+<p>Sourcing bottles, pumps, tubes and cosmetic packaging.</p>
 
-<div class="process">
-
-<p><strong>Step 1:</strong> Share your product idea or category.</p>
-
-<p><strong>Step 2:</strong> We identify suitable third-party manufacturers.</p>
-
-<p><strong>Step 3:</strong> Review formulation and packaging options.</p>
-
-<p><strong>Step 4:</strong> Coordinate manufacturing preparation.</p>
+</div>
 
 </div>
 
@@ -183,7 +242,51 @@ Our experience working with cosmetic supply chains helps simplify the process of
 
 
 
-<section class="contact">
+<section id="testimonials">
+
+<h2>Testimonials</h2>
+
+<div class="testimonials">
+
+<p>
+"Great support in helping us identify the right manufacturer and packaging vendors for our skincare brand."
+</p>
+
+<br>
+
+<p>
+"Helped simplify the process of launching our first cosmetic product."
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="founder" class="founder">
+
+<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2">
+
+<div>
+
+<h2>Founder</h2>
+
+<p>
+Biotechnology professional with experience in cosmetic product development and coordination with third-party manufacturers and packaging suppliers.
+</p>
+
+<p>
+Focused on helping emerging beauty brands navigate the early stages of cosmetic manufacturing and product launch.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="contact">
 
 <h2>Contact</h2>
 
@@ -203,6 +306,7 @@ Our experience working with cosmetic supply chains helps simplify the process of
 
 </footer>
 
+</div>
 
 </body>
 </html>
